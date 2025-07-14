@@ -100,14 +100,25 @@ body {
     font-weight: bold;
     color: #000;
 }
-.contents h2 {
+/* .contents h2 {
     font-size: 28px;
     color: #000;
 }
 .contents h2 span {
     color: #4834d4;
     text-transform: uppercase;
+} */
+ .contents .hero-subtitle{
+    font-size: 28px;
+    color: #000;
 }
+.typewriter-highlight {
+    font-weight: 600; /* font-semibold */
+    color: #4416d9; /* text-blue-300 */
+    font-size: 28px;
+    /* border: 2px solid rgb(255, 0, 230); */
+}
+
 .social-media {
     gap: 20px;
     display: flex;
@@ -533,13 +544,21 @@ footer {
         font-weight: bold;
         color: #000;
     }
-    .contents h2 {
+    /* .contents h2 {
         font-size: 16px;
         color: #000;
     }
     .contents h2 span {
         color: #4834d4;
         text-transform: uppercase;
+        font-size: 16px;
+    } */
+    .contents .hero-subtitle {
+        font-size: 16px;
+        color: #000;
+    }
+    .contents .typewriter-highlight {
+        color: #4834d4;
         font-size: 16px;
     }
     .social-media {

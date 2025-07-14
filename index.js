@@ -17,6 +17,50 @@ document.querySelectorAll(".nav-links").forEach(n => n.addEventListener("click",
 }))
 
 
+// Typewriter effect for hero section
+const typewriterTextElement = document.getElementById('typewriter-text');
+const phrases = [
+    "Web Developer",
+    "Java Developer",
+    "Freelancer"
+];
+let phraseIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typingSpeed = 100; // milliseconds per character
+
+function typeWriter() {
+    const currentPhrase = phrases[phraseIndex];
+    if (isDeleting) {
+        // Deleting text
+        typewriterTextElement.textContent = currentPhrase.substring(0, charIndex - 1);
+        charIndex--;
+        typingSpeed = 50; // Faster deletion
+    } else {
+        // Typing text
+        typewriterTextElement.textContent = currentPhrase.substring(0, charIndex + 1);
+        charIndex++;
+        typingSpeed = 100; // Normal typing speed
+    }
+
+    if (!isDeleting && charIndex === currentPhrase.length) {
+        // Pause at end of phrase, then start deleting
+        typingSpeed = 2000; // Pause for 2 seconds
+        isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+        // Done deleting, move to next phrase (or restart if only one phrase)
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        typingSpeed = 500; // Pause before typing next phrase
+    }
+
+    setTimeout(typeWriter, typingSpeed);
+}
+
+// Start the typewriter effect when the page loads
+window.onload = typeWriter;
+
+
 const projects = [
     {
         title: "Profile-Card Design",
