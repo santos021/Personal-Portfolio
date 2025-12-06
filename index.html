@@ -4,223 +4,318 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santos Kumar Biswal - Software Developer</title>
-    <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <title>Santos Kumar Biswal - Personal Portfolio</title>
 
-    <!-- add favicon -->
+    <!-- Import Phosphor Icons (Lightweight modern icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+     <!-- add favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/favicon_io/site.webmanifest">
     <!-- end -->
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <!-- header section started -->
-    <div class="navbar">
-        <h2><a href="index.html">Santos07.</a></h2>
-        <div>
-            <ul class="nav-menu">
-                <li class="nav-items"><a href="#" class="nav-links">Home</a></li>
-                <li class="nav-items"><a href="#about-us" class="nav-links">About</a></li>
-                <li class="nav-items"><a href="#home" target="_blank" class="nav-links">Blogs</a></li>
-                <li class="nav-items"><a href="#projects" class="nav-links">Projects</a></li>
-                <li class="nav-items"><a href="#contact" class="nav-links">Contact</a></li>
-            </ul>
-        </div>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </div>
-    <!-- header section end -->
 
-    <!-- home section start -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <div class="contents">
-                <h3>Hello, It's me</h3>
-                <h1>Santos Kumar Biswal</h1>
-                 <p class="hero-subtitle">and I'm a <span id="typewriter-text" class="typewriter-highlight"></span></p>
-                <div class="social-media">
-                    <a href="https://www.facebook.com/@santosku.biswal07/"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://x.com/SantosKumarBis3"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/santos-biswal07/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/_.santos.07._/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://github.com/santos021"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <a href="resume.pdf" class="btn" target="_blank">Download CV</a>
-            </div>
-            <div class="img">
-                <img src="/images/rm-bg.png" alt="">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <!-- 1. Left: Logo -->
+        <a href="/" class="logo">Santos<span>07.</span></a>
+
+        <!-- 2. Middle: Menu Links -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About Me</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- 3. Right: Controls -->
+        <div class="nav-controls">
+            <!-- Theme Toggle Icon -->
+            <button class="theme-btn" id="themeToggle" aria-label="Toggle Dark Mode">
+                <i class="ph ph-moon"></i>
+            </button>
+
+            <!-- Mobile Hamburger -->
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-    </section>
-    <!-- home section end -->
+    </nav>
 
-    <!-- about-us section -->
-    <section class="about" id="about-us">
-        <div class="about-content">
-            <div class="img-2">
-                <img src="/images/img2.jpg" alt="">
-            </div>
-            <div class="about-me">
-                <h1 class="heading">About <span>me</span></h1>
-                <p>I am a final-year BTech student, with a strong foundation in web development, I am
-                    currently enhancing my skills by learning Java full stack development. My academic journey and
-                    practical experiences have equipped me with a solid understanding of both front-end and back-end
-                    technologies, preparing me to tackle complex challenges in the tech industry.
+    <!-- Placeholder Content -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+
+            <!-- LEFT SIDE: Text & Buttons -->
+            <div class="hero-content">
+                <span class="hero-subtitle">Hello, It's me</span>
+                <h1 class="hero-title">Santos Kumar Biswal</h1>
+
+                <!-- Dynamic Typewriter Text -->
+                <h3 class="hero-role">
+                    And I'm a <span id="typewriter" class="text"></span><span class="cursor">&nbsp;</span>
+                </h3>
+
+                <p class="hero-description">
+                    I specialize in building robust and scalable backend systems using Java technologies. Passionate
+                    about clean code and efficient software architecture.
                 </p>
-                <div class="about-edu-skills">
-                    <div class="education">
-                        <h2>Educations :
-                            <hr class="ed-hr">
-                        </h2>
-                        <div class="edu-info">
-                            <ul type="square" class="info-all">
-                                <li>2022-2025 <br>
-                                    BTech CSE AIML <br>
-                                    Trident Academy Of Technology,Bhubaneswar
-                                </li>
-                                <li>2020-2022 <br>
-                                    Diploma IT <br>
-                                    Government Polytechnic,Bhubaneswar
-                                </li>
-                                <li>2018-2020 <br>
-                                    12th Science <br>
-                                    SLA Collage,Godipada,Nayagarh
-                                </li>
-                                <!-- <li>2018 <br>
-                                    10th <br>
-                                    K.N.Janata High School,Sajanapada
-                                </li> -->
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <h2>Skills :
-                            <hr class="ed-hr">
-                        </h2>
-                        <div class="skill-info">
-                            <div class="html-info">
-                                <i class="fa-brands fa-html5" style="color: #ff4c1e;">
-                                    <div class="info">html</div>
-                                </i>
-                                <!-- <div class="info">html</div> -->
-                            </div>
-                            <div class="html-info">
-                                <i class="fa-brands fa-css3-alt" style="color: #004ce8;">
-                                    <div class="info">css</div>
-                                </i>
-                                <!-- <div class="info">css</div> -->
-                            </div>
-                            <div class="html-info">
-                                <i class="fa-brands fa-js" style="color: #ffdf00;">
-                                    <div class="info">JS</div>
-                                </i>
-                                <!-- <div class="info">JS</div> -->
-                            </div>
-                            <div class="html-info">
-                                <i class="fa-brands fa-react" style="color: #58c4dc;">
-                                    <div class="info">react</div>
-                                </i>
-                                <!-- <div class="info">react</div> -->
-                            </div>
-                            <div class="html-info">
-                                <i class="fa-brands fa-java" style="color: #73a1fb;">
-                                    <div class="info">java</div>
-                                </i>
-                                <!-- <div class="info">java</div> -->
-                            </div>
-                            <div class="html-info">
-                                <i class="fa-solid fa-database" style="color: #005eff;">
-                                    <div class="info">sql</div>
-                                </i>
-                                <!-- <div class="info">sql</div> -->
-                            </div>
-                            <div class="html-info">
-                                <i class="fa-brands fa-wordpress" style="color: #3957e9;">
-                                    <div class="info">word-<br>press</div>
-                                </i>
-                                <!-- <div class="info">wordpress</div> -->
-                            </div>
-                            <div class="html-info">
-                                <i class="fa-brands fa-github" style="color: #0a0a0b;"></i>
-                                    <div class="info">Git</div>
-                                </i>
-                                <!-- <div class="info">wordpress</div> -->
-                            </div>
 
-                        </div>
-                        <!-- <i class="fa-brands fa-css3-alt" style="color: #004ce8;"></i>
-                        <i class="fa-brands fa-js" style="color: #ffdf00;"></i>
-                        <i class="fa-brands fa-react" style="color: #58c4dc;"></i>
-                        <i class="fa-brands fa-java" style="color: #73a1fb;"></i>
-                        <i class="fa-brands fa-wordpress" style="color: #3957e9;"></i>
-                        <i class="fa-solid fa-database" style="color: #005eff;"></i> -->
+                <div class="hero-actions">
+                    <!-- Download CV Button -->
+                    <a href="/assets/docs/Santos_CV.pdf" target="_blank" class="btn-primary">
+                        Download CV <i class="ph-bold ph-download-simple"></i>
+                    </a>
+
+                    <!-- Social Icons -->
+                    <div class="social-links">
+                        <a href="https://github.com/santos021" target="_blank" class="social-icon" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+                        <a href="https://www.linkedin.com/in/santos-biswal07/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="https://www.facebook.com/@santosku.biswal07/" target="_blank" class="social-icon" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+                        <a href="https://www.instagram.com/_.santos.07._/" target="_blank" class="social-icon" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="https://x.com/SantosKumarBis3" target="_blank" class="social-icon" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
                     </div>
                 </div>
             </div>
 
+            <!-- RIGHT SIDE: Image -->
+            <div class="hero-image-wrapper">
+                <div class="glow"></div>
+                <!-- Circular Image Placeholder -->
+                <img src="/assets/images/profile-pic.png" alt="Santos Kumar Biswal" class="hero-img">
+            </div>
+
         </div>
     </section>
-    <!-- about-us section end -->
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+        <div class="about-container">
 
-    <!-- Project section start -->
-    <section id="projects" class="project-section">
-        <div class="container">
-            <h2>Projects <hr class="p-uline"></h2>
-            <div id="projects-flex" class="projects-flex">
-                <!-- JavaScript will inject project cards here -->
+            <!-- LEFT: Image (Hidden on Mobile) -->
+            <div class="about-image-container">
+                <!-- Rectangular Image for About Section -->
+                <img src="/assets/images/hero.jpeg" alt="Coding Setup" class="about-img">
+            </div>
+
+            <!-- RIGHT: Content -->
+            <div class="about-content">
+                <span class="section-subtitle">Who I Am</span>
+                <h2 class="section-title">About Me</h2>
+
+                <p class="about-text">
+                    I am a passionate Java Developer with a strong foundation in object-oriented programming and
+                    software design patterns. I love solving complex problems and optimizing backend performance.
+                    <br><br>
+                    My journey involves building full-stack applications, but my heart beats for server-side logic. I am
+                    constantly learning new frameworks to stay updated with industry trends.
+                </p>
+
+                <!-- Skills Grid -->
+                <div class="skills-wrapper">
+                    <h3 class="skills-title">My Skills</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">REST API</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">OOPs</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React JS</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+
+                <!-- Education Box Design -->
+                <div class="education-wrapper">
+                    <h3>Education</h3>
+                    <div class="education-grid">
+
+                        <!-- Education Card 1: B.Tech -->
+                        <div class="education-card">
+                            <span class="edu-year">2022 - 2025</span>
+                            <h4 class="edu-degree">B.Tech in Computer Science Engineering (AI & ML)</h4>
+                            <p class="edu-school"><i class="ph ph-student"></i> Trident Academy of Technology,
+                                Bhubaneswar, Odisha</p>
+                            <span class="edu-grade">CGPA: 7.24</span>
+                        </div>
+
+                        <!-- Education Card 2: Diploma -->
+                        <div class="education-card">
+                            <span class="edu-year">2020 - 2022</span>
+                            <h4 class="edu-degree">Diploma in Information Technology</h4>
+                            <p class="edu-school"><i class="ph ph-student"></i> Government Polytechnic, Bhubaneswar,
+                                Odisha</p>
+                            <span class="edu-grade">Percentage: 72.96%</span>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Achievements Section -->
+                <div class="achievements-wrapper">
+                    <h3 class="skills-title">Achievements</h3>
+                    <div class="achievements-grid">
+
+                        <!-- Achievement 1: SIH -->
+                        <div class="achievement-card">
+                            <div class="achievement-img-container">
+                                <img src="/assets/images/sih23.png"
+                                    alt="Smart India Hackathon Certificate" class="achievement-img">
+                            </div>
+                            <div class="achievement-content">
+                                <h4 class="achievement-title">Grand Finalist - Smart India Hackathon 2023</h4>
+                                <p class="achievement-desc">Selected for the Grand Finale of Smart India Hackathon,
+                                    demonstrating problem-solving skills on a national level.</p>
+                            </div>
+                        </div>
+
+                        <!-- Achievement 2: Shining Star -->
+                        <div class="achievement-card">
+                            <div class="achievement-img-container">
+                                <img src="/assets/images/shining-star-awardee.jpg"
+                                    alt="Shining Star Award" class="achievement-img">
+                            </div>
+                            <div class="achievement-content">
+                                <h4 class="achievement-title">Shining Star Award 2024
+                                    
+                                </h4>
+                                <p class="achievement-desc">Received the 'Shining Star' award from my college for
+                                    consistent academic excellence and active participation.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
-    <!-- project section end --> 
-
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-        <form action="#">
-            <h2>Contact Me!</h2>
-            <div class="input-box">
-                <div class="input-field field">
-                    <input type="text" placeholder="Full Name" class="item" autocomplete="off" required>
-                </div>
-                <div class="input-field field">
-                    <input type="email" placeholder="Email Address" class="item" autocomplete="off" required>
-                </div>
-            </div>
-            <div class="input-box">
-                <div class="input-field field">
-                    <input type="number" placeholder="Mobile number" class="item" autocomplete="off">
-                </div>
-                <div class="input-field field">
-                    <input type="text" placeholder="Subject" class="item" autocomplete="off" required>
-                </div>
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects-section">
+        <div class="projects-container">
+            <div class="projects-header">
+                <span class="section-subtitle">My Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
             </div>
 
-            <div class="textarea-field field">
-                <textarea name="" id="" cols="25" rows="10" placeholder="Your Message" class="item"
-                    autocomplete="off" required></textarea>
+            <!-- Empty container where JS will inject projects -->
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects will be loaded here by JavaScript -->
             </div>
 
-            <button type="submit">Send Message</button>
-        </form>
+            <div class="view-all-container">
+                <a href="html/projects.html" class="view-all-btn">
+                    View All Projects <i class="ph-bold ph-arrow-right"></i>
+                </a>
+            </div>
+        </div>
     </section>
-    <!-- contact section end -->
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <!-- Left Side: Info -->
+            <div class="contact-info">
+                <span class="section-subtitle">Contact Me</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-desc">
+                    I'm currently looking for new opportunities as a Java Developer. Whether you have a question or just
+                    want to say hi, I'll try my best to get back to you!
+                </p>
 
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="ph ph-envelope"></i></div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>santosbiswal543@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="ph ph-phone"></i></div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+91 96682 14057</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="ph ph-map-pin"></i></div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Bhubaneswar, Odisha, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links" style="margin-top: 2rem;">
+                    <a href="https://github.com/santos021" target="_blank" class="social-icon"><i class="ph ph-github-logo"></i></a>
+                    <a href="https://www.linkedin.com/in/santos-biswal07/" target="_blank" class="social-icon"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="https://x.com/SantosKumarBis3" target="_blank" class="social-icon"><i class="ph ph-twitter-logo"></i></a>
+                    <a href="https://www.instagram.com/_.santos.07._/" target="_blank" class="social-icon"><i class="ph ph-instagram-logo"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Side: Form -->
+            <div class="contact-form-wrapper">
+                <!-- 
+                    WEB3FORMS SETUP:
+                    1. Get your Access Key from https://web3forms.com/
+                    2. Replace 'YOUR_ACCESS_KEY_HERE' below with your key.
+                -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+
+                    <!-- Required Hidden Field: Your Access Key -->
+                    <input type="hidden" name="access_key" value="a428bf31-7e9c-4e87-b395-186ddd9f995b">
+
+                    <!-- Optional: Subject Line for email -->
+                    <input type="hidden" name="subject" value="New Message from Portfolio Website">
+
+                    <!-- Optional: Spam Protection (Honey Pot) -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" id="name" placeholder="Ex: Santos Kumar" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="Ex: santos@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" rows="5" placeholder="How can I help you?"
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary"
+                        style="width: 100%; justify-content: center; padding: 14px; font-size: 1.05rem;">
+                        Send Message <i class="ph-bold ph-paper-plane-right"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
     <footer>
-        copyright @2024 santosbiswal.com
+        <p>&copy; 2025 <span>Santos Kumar Biswal</span>. All rights reserved.</p>
     </footer>
 
-    <!-- <div id="scroll-top" onclick="scrolltop()">
-        <span><i class="fa-solid fa-arrow-up"></i></span>
-    </div> -->
+    <script src="js/script.js"></script>
 
-
-
-    <script src="index.js"></script>
 </body>
 
 </html>

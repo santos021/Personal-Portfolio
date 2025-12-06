@@ -1,0 +1,72 @@
+[
+  {
+    "title": "E-Commerce Website",
+    "image": "/assets/images/electromart.png",
+    "skills": ["Java", "Spring Boot", "MySQL", "HTML","CSS","JavaScript","Bootstrap"],
+    "liveLink": "#",
+    "githubLink": "https://github.com/santos021/ElectroMart"
+  },
+  {
+    "title": "QuizzyNest Web Application",
+    "image": "/assets/images/quizzynest.png",
+    "skills": ["Spring Boot", "MySQL", "HTML","CSS","JavaScript","Bootstrap"],
+    "liveLink": "#",
+    "githubLink": "https://github.com/santos021/QuizzyNest"
+  },
+  {
+    "title": "Personal Portfolio",
+    "image": "/assets/images/portfolio.png",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "liveLink": "https://santoskumarbiswal.com/",
+    "githubLink": "https://github.com/santos021/Personal-Portfolio"
+  },
+  {
+    "title": "Weather Web Application",
+    "image": "/assets/images/weather.png",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "liveLink": "/assets/projects/Weather-App/index.html",
+    "githubLink": "https://github.com/santos021/Simple-Weather-App"
+  },
+  {
+    "title": "Quote Generator",
+    "image": "/assets/images/quotes2.png",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "liveLink": "/assets/projects/quote-generator/index.html",
+    "githubLink": "https://github.com/santos021/quote-generator"
+  },
+  {
+    "title": "Netflix UI page",
+    "image": "/assets/images/netflix.png",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "liveLink": "/assets/projects/netflix-ui-clone/index.html",
+    "githubLink": "https://github.com/santos021/netflix-ui-clone"
+  },
+  {
+    "title": "Landing page",
+    "image": "/assets/images/plante.png",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "liveLink": "/assets/projects/plantE-store/index.html",
+    "githubLink": "https://github.com/santos021/web_dev-project/tree/main/plantE-store"
+  },
+  {
+    "title": "QR Code Generator",
+    "image": "/assets/images/qrcode.png",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "liveLink": "/assets/projects/qr-code-generator/index.html",
+    "githubLink": "#"
+  },
+  {
+    "title": "To-Do List",
+    "image": "/assets/images/todo-list.png",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "liveLink": "/assets/projects/To-do-List/index.html",
+    "githubLink": "#"
+  },
+  {
+    "title": "Tempreture convertor",
+    "image": "/assets/images/tempr.png",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "liveLink": "/assets/projects/temp-convertor/index.html",
+    "githubLink": "https://github.com/santos021/temperature-converter"
+  }
+]
