@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins" sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 body{
     background: #c8e6e5;
@@ -61,6 +61,16 @@ body{
     max-height: 300px;
     margin: 10px auto;
     border: 1px solid #d1d1d1;
+}
+
+
+#downloadBtn{
+    display: none;
+    background: #28a745;
+}
+
+#downloadBtn:hover{
+    background: #218838;
 }
 
 .error{
